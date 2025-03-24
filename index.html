@@ -4,28 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetsCo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
 
     <!-- Navbar -->
-  <nav class="fixed top-0 left-0 right-0 bg-gray-800 shadow-lg z-50">
+  <nav class="fixed top-0 left-0 right-0 bg-blue-800 shadow-lg z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <div class="flex-shrink-0">
-          <img class="h-8" src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
+          <img class="h-8" src="logo-pic.jpg" alt="Logo">
         </div>
 
         <!-- Navigation Links -->
         <div class="hidden md:flex space-x-4">
-          <a href="#home" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Home</a>
-          <a href="#about" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">About</a>
-          <a href="#services" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Services</a>
-          <a href="#contact" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Contact</a>
+          <a href="#home" class="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Home</a>
+          <a href="#about" class="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">About</a>
+          <a href="#services" class="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Services</a>
+          <a href="#booking-form" class="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Booking form</a>
+          <a href="#contact" class="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Contact</a>
         </div>
       </div>
     </div>
   </nav>
-</head>
-<body>
+
+      <!-- Hero Section -->
+      <section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('hero-background.jpg');">
+        <!-- Overlay to improve readability -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        
+        <!-- Content inside Hero -->
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center text-white px-6 sm:px-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to Our Website</h1>
+                <p class="text-lg md:text-xl mb-6">Explore our services and discover how we can help you grow your business.</p>
+                <a href="#about" class="bg-blue-700 px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-800 transition">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections -->
+    <div id="about" class="p-8 bg-gray-200">
+        <h1 class="text-4xl font-semibold text-center">About Section</h1>
+        <p>
+            Welcome to Pets.co , where tails wag and dreams take flight! 
+            Our dedicated team pours love, care, and passion into every pet's journey. 
+            From playful puppies to wise old cats, we provide exceptional care, products, and services tailored to your furry family.
+            <strong> Experience the heartfelt commitment that pets deserve!</strong>
+        </p>
+    </div>
+
+    <div id="services" class="p-8 bg-gray-300">
+        <h1 class="text-4xl font-semibold text-center">Services Section</h1>
+
+    </div>
+    <!-- Card Container with Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<!-- Card Section -->
+    <div class="max-w-sm mx-auto">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105 hover:shadow-2xl hover:translate-y-2">
+
+            <!-- Card Content -->
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold text-gray-800">Grooming</h2>
+                <p class="text-gray-600 mt-2">Keep your pets happy and healthy with professional grooming! We offer bathing, nail trimming, and styling for their comfort and hygiene..</p>
+                <a href="#form-section" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+                    Go to Form
+                </a>
+            </div>
+        </div>
+    </div> 
+
+    <div class="max-w-sm mx-auto">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105 hover:shadow-2xl hover:translate-y-2">
+
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold text-gray-800">Toys</h2>
+                <p class="text-gray-600 mt-2">Delight your pets with safe, durable toys that spark endless fun! Perfect for chewing, fetching, and keeping them active and engaged. 🐾</p>
+                <a href="#form-section" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+                    Go to Form
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-sm mx-auto">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105 hover:shadow-2xl hover:translate-y-2">
+
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold text-gray-800">Training</h2>
+                <p class="text-gray-600 mt-2">Unlock your pet's potential with expert training! We teach obedience, social skills, and fun tricks, strengthening the bond you share. 🐾</p>
+                <a href="#form-section" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+                    Go to Form
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-sm mx-auto">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105 hover:shadow-2xl hover:translate-y-2">
+
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold text-gray-800">Pet health</h2>
+                <p class="text-gray-600 mt-2">Ensure your pet’s wellness with regular check-ups, vaccinations, balanced nutrition, and exercise. Prioritize their health for a happier, longer life! 🐾</p>
+                <a href="#form-section" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+                    Go to Form
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
     
+        <!-- Form Section -->
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Pet Information Form</h2>
+    
+            <form action="#" method="POST" class="space-y-6">
+                <!-- Pet Name -->
+                <div>
+                    <label for="pet-name" class="block text-gray-700">Pet's Name</label>
+                    <input type="text" id="pet-name" name="pet-name" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+    
+                <!-- Pet Type -->
+                <div>
+                    <label for="pet-type" class="block text-gray-700">Pet Type</label>
+                    <select id="pet-type" name="pet-type" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                        <option value="">Select Pet Type</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Bird</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+    
+                <!-- Breed -->
+                <div>
+                    <label for="breed" class="block text-gray-700">Breed</label>
+                    <input type="text" id="breed" name="breed" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+    
+                <!-- Age -->
+                <div>
+                    <label for="age" class="block text-gray-700">Age (in years)</label>
+                    <input type="number" id="age" name="age" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+    
+                <!-- Pet's Owner Information -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4">Owner's Information</h3>
+                    <!-- Owner's Name -->
+                    <label for="owner-name" class="block text-gray-700">Owner's Name</label>
+                    <input type="text" id="owner-name" name="owner-name" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+    
+                <div>
+                    <!-- Owner's Email -->
+                    <label for="owner-email" class="block text-gray-700">Owner's Email</label>
+                    <input type="email" id="owner-email" name="owner-email" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+    
+                <div>
+                    <!-- Owner's Phone Number -->
+                    <label for="owner-phone" class="block text-gray-700">Owner's Phone Number</label>
+                    <input type="tel" id="owner-phone" name="owner-phone" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        Submit Information
+                    </button>
+                </div>
+            </form>
+        </div>
 </body>
+
+<footer>
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-lg mb-4">Follow Us on Social Media</p>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-center space-x-6">
+            <a href="https://www.facebook.com" target="_blank" class="text-white hover:text-blue-600">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="text-white hover:text-blue-400">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-white hover:text-pink-600">
+                <i class="fab fa-instagram fa-2x"></i>
+
+    <!-- Submit Button -->
+    <div class="flex justify-center">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
+            Submit Information
+        </button>
+    </form>
+
+</footer>
 </html>
