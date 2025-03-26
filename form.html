@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+      <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-blue-600 shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <img class="h-8" src="logo-pic.jpg" alt="Logo">
+            </div>
+    
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-4">
+              <a href="index.html" class="text-(#FFFFFF) px-3 py-2 rounded-md text-lg font-large hover:bg-gray-700">Home</a>
+
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- hero Section -->
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg" style="background-image: url('hero-background.jpg');">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Pet Information Form</h2>
+
+        <form action="#" method="POST" class="space-y-6">
+            <!-- Pet Name -->
+            <div>
+                <label for="pet-name" class="block text-gray-700">Pet's Name</label>
+                <input type="text" id="pet-name" name="pet-name" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+            </div>
+
+            <!-- Pet Type -->
+            <div>
+                <label for="pet-type" class="block text-gray-700">Pet Type</label>
+                <select id="pet-type" name="pet-type" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <option value="">Select Pet Type</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bird">Bird</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Breed -->
+            <div>
+                <label for="breed" class="block text-gray-700">Breed</label>
+                <input type="text" id="breed" name="breed" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+            </div>
+
+            <!-- Age -->
+            <div>
+                <label for="age" class="block text-gray-700">Age (in years)</label>
+                <input type="number" id="age" name="age" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+            </div>
+
+            <!-- Pet's Owner Information -->
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4">Owner's Information</h3>
+                <!-- Owner's Name -->
+                <label for="owner-name" class="block text-gray-700">Owner's Name</label>
+                <input type="text" id="owner-name" name="owner-name" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+            </div>
+
+            <div>
+                <!-- Owner's Email -->
+                <label for="owner-email" class="block text-gray-700">Owner's Email</label>
+                <input type="email" id="owner-email" name="owner-email" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+            </div>
+
+            <div>
+                <!-- Owner's Phone Number -->
+                <label for="owner-phone" class="block text-gray-700">Owner's Phone Number</label>
+                <input type="tel" id="owner-phone" name="owner-phone" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex justify-center">
+                <button type="submit"value= "submit" onclick="onSubmit ()" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    Submit Information
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" script="script.js" ></script> 
+</body>
+<!-- Footer Section -->
+<footer class="bg-black text-white py-8">
+    <div class="max-w-7xl mx-auto flex justify-center space-x-8">
+        <!-- Facebook Link -->
+        <a href="https://www.facebook.com" target="_blank" class="hover:opacity-80 transition-opacity duration-300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" class="w-10 h-10">
+        </a>
+        <!-- Repeat for other icons -->
+        <a href="https://www.twitter.com" target="_blank" class="hover:opacity-80 transition-opacity duration-300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter" class="w-10 h-10">
+        </a>
+        
+        <a href="https://www.instagram.com" target="_blank" class="hover:opacity-80 transition-opacity duration-300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram" class="w-10 h-10">
+        </a>
+    </div>
+</footer>       
+</html>
