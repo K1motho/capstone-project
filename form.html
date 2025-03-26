@@ -12,8 +12,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16">
             <!-- Logo -->
-            <div class="flex-shrink-0">
-                <a href="index.html"><img class="h-8 w-32" src="form background.jpg" alt="Logo"></a>
+            <div class="flex">
+                <a href="index.html"><img class="h-16 w-48" src="form background.jpg" alt="Logo"></a>
+
             </div>
     
             <!-- Navigation Links -->
@@ -26,7 +27,7 @@
     </nav>
     <!-- hero Section -->
      <section style="background-image: 'form background.jpg';">
-    <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg" >
+    <div class="max-w-2xl mx-auto bg-white p-8 flex justify-center rounded-lg shadow-lg" >
         <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Pet Information Form</h2>
 
         <form action="#" method="POST" class="space-y-6">
@@ -60,6 +61,19 @@
                 <input type="number" id="age" name="age" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
             </div>
 
+            <!-- service sheet -->
+            <div>
+                <label for="Service interested" class="block text-gray-700">service interested</label>
+                <select id="pet-type" name="pet-type" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <option value="select service">Select service</option>
+                    <option value="grooming">Srooming</option>
+                    <option value="toys">Toys</option>
+                    <option value="training">training</option>
+                    <option value="health services">health services</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
             <!-- Pet's Owner Information -->
             <div>
                 <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4">Owner's Information</h3>
@@ -80,13 +94,14 @@
                 <input type="tel" id="owner-phone" name="owner-phone" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
             </div>
 
-            <!-- Submit Button -->
-            <div class="flex justify-center"><a href="login.html">
-                <button type="submit" value= "submit" onclick="onSubmit ()" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    Submit Information
-                </button>
-                 </a>
-            </div>
+           <!-- Button inside a link -->
+         <div class="flex justify-center">
+             <a href="login.html">
+                <button type="button" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
+            Submit Information
+            </button>
+             </a>
+          </div>
         </form>
     </div>
     </section>
