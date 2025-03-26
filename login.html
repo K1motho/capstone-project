@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login form</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      *{
+        margin-left:8px ;
+      }
+    </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     
@@ -14,7 +19,7 @@
           <div class="flex items-center justify-between h-16">
             <!-- Logo -->
             <div class="flex-shrink-0">
-              <img class="h-8" src="logo-pic.jpg" alt="Logo">
+              <a href="index.html"><img class="h-16 w-40" src="logo-pic.jpg" alt="Logo"></a>
             </div>
     
             <!-- Navigation Links -->
@@ -52,11 +57,31 @@
 
             <!-- Submit Button -->
             <div class="flex justify-center">
-                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
+                <button type="submit" onclick="onSubmit ()" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
                     Login
                 </button>
             </div>
+            <p>Don't have an account?<a href="signup.html">sign up</a> </p>
+            
         </form>
-    
+
+        <script type="text/javascript" script="script.js" ></script>
 </body>
+<!-- Footer Section -->
+<footer class="bg-black text-white py-8">
+  <div class="max-w-7xl mx-auto flex justify-center space-x-8">
+      <!-- Facebook Link -->
+      <a href="https://www.facebook.com" target="_blank" class="hover:opacity-80 transition-opacity duration-300">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" class="w-10 h-10">
+      </a>
+      <!-- Repeat for other icons -->
+      <a href="https://www.twitter.com" target="_blank" class="hover:opacity-80 transition-opacity duration-300">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter" class="w-10 h-10">
+      </a>
+      
+      <a href="https://www.instagram.com" target="_blank" class="hover:opacity-80 transition-opacity duration-300">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram" class="w-10 h-10">
+      </a>
+  </div>
+</footer>
 </html>
