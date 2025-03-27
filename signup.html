@@ -9,24 +9,26 @@
  
 </head>
 <body class="min-h-screen flex justify-center items-center bg-gray-200">
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 bg-blue-600 shadow-lg z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-16">
-            <!-- Logo -->
-            <div class="flex-shrink-0">
-                <a href="index.html"><img class="h-16 w-40" src="barber sign.png" alt="Logo"></a>
-            </div>
-    
-            <!-- Navigation Links -->
-            <div class="hidden md:flex space-x-4">
-              <a href="index.html" class="text-(#FFFFFF) px-3 py-2 rounded-md text-lg font-medium hover:bg-gray-700">Home</a>
-              <a href="services.html" class="text-(#FFFFFF) px-3 py-2 rounded-md text-lg font-medium hover:bg-gray-700">to services</a>
-
-            </div>
-          </div>
+        <!-- Navbar -->
+  <nav class="fixed top-0  right-0 bg-blue-800 shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 fixed left-0 rounded-lg" >
+            <a href="index.html"><img class="h-16 w-40" src="barber sign.png" alt="Logo"></a>
         </div>
-    </nav>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-4">
+          <a href="about.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:underline">About</a>
+          <a href="services.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:underline">Services</a>
+          <a href="form.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:underline">Booking form</a>
+          <a href="login.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:underline">login</a>
+           
+        </div>
+      </div>
+    </div>
+  </nav>
     <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
         <h2 class="text-lg font-semibold text-center text-gray-800 mb-6">sign up!!</h2>
 
@@ -59,7 +61,7 @@
                  <!-- Submit Button -->
                   <a href="login.html">
                  <div class="flex justify-center">
-                     <button type="submit"  class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
+                     <button type="submit" onclick="onSubmit ()"  class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-600">
                          create account
                      </button>
                  </div>

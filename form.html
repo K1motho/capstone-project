@@ -6,32 +6,33 @@
     <title>FORM</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-brown-500">
 
-      <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 bg-blue-600 shadow-lg z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-16">
-            <!-- Logo -->
-            <div class="flex">
-                <a href="index.html"><img class="h-16 w-48" src="form background.jpg" alt="Logo"></a>
-
-            </div>
-    
-            <!-- Navigation Links -->
-            <div class="hidden md:flex space-x-4">
-              <a href="index.html" class="text-(#FFFFFF) px-3 py-2 rounded-md text-lg font-large hover:bg-gray-700">Home</a>
-
-            </div>
-          </div>
+        <!-- Navbar -->
+  <nav class="fixed top-0  right-0 bg-blue-800 shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 fixed left-0 rounded-lg" >
+            <a href="index.html"><img class="h-16 w-40" src="barber sign.png" alt="Logo"></a>
         </div>
-    </nav>
-    <!-- hero Section -->
-    <section class="pt-20" style="background-image: url('form background.jpg');">
-    <div class="max-w-2xl mx-auto bg-white p-8 flex justify-center rounded-lg shadow-lg" >
-        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Pet Information Form</h2>
 
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-4">
+          <a href="about.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:underline">About</a>
+          <a href="services.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:underline">Services</a>
+          <a href="form.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:underline">Booking form</a>
+          <a href="login.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:underline">login</a>
+           
+        </div>
+      </div>
+    </div>
+  </nav>
+    <!-- hero Section -->
+    <section class="flex items-center justify-center min-h-screen pt-20">
+      <div class="max-w-2xl mx-auto bg-white p-8 flex justify-center rounded-lg shadow-lg">
         <form action="#" method="POST" class="space-y-6 pt-20">
+            <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Pet Information Form</h2>
             <!-- Pet Name -->
             <div>
                 <label for="pet-name" class="block text-gray-700">Pet's Name</label>
@@ -104,7 +105,7 @@
              </a>
           </div>
         </form>
-    </div>
+      </div>
     </section>
 
     <script type="text/javascript" script="script.js" ></script> 
